@@ -1,6 +1,6 @@
 {
   "name": "step-wizard-react",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "main": "./lib/index.js",
   "license": "MIT",
   "description": "A step-wizard component for React.",
