@@ -2,16 +2,16 @@
 
 <p>
   <a href="https://www.npmjs.com/package/step-wizard-react">
-    <img src="https://img.shields.io/npm/dt/step-wizard-react.svg" alt="Downloads">
+    <img src="https://img.shields.io/npm/dm/step-wizard-react" alt="Downloads">
   </a>
   <a href="https://www.npmjs.com/package/step-wizard-react">
-    <img src="https://img.shields.io/npm/dm/step-wizard-react.svg?sanitize=true" alt="Downloads">
+    <img src="https://img.shields.io/npm/dt/step-wizard-react" alt="Downloads">
   </a>
   <a href="https://www.npmjs.com/package/step-wizard-react">
-    <img src="https://img.shields.io/npm/v/step-wizard-react.svg?sanitize=true" alt="Version">
+    <img src="https://img.shields.io/npm/v/step-wizard-react" alt="Version">
   </a>
   <a href="https://www.npmjs.com/package/step-wizard-react">
-    <img src="https://img.shields.io/npm/l/step-wizard-react.svg?sanitize=true" alt="License">
+    <img src="https://img.shields.io/npm/l/step-wizard-react" alt="License">
   </a>
 </p>
 
