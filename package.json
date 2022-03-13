@@ -2,6 +2,25 @@
   "name": "step-wizard-react",
   "version": "0.0.1",
   "main": "./lib/index.js",
+  "license": "MIT",
+  "description": "A step-wizard component for React.",
+  "author": {
+    "name": "Mehmet Sağır",
+    "email": "me@mehmetsagir.com",
+    "url": "https://mehmetsagir.com"
+  },
+  "homepage": "https://github.com/mehmetsagir/step-wizard-react/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehmetsagir/step-wizard-react.git"
+  },
+  "bugs": "https://github.com/mehmetsagir/step-wizard-react/issues",
+  "keywords": [
+    "react",
+    "react-native",
+    "step-wizard-react",
+    "step-wizard"
+  ],
   "scripts": {
     "build": "tsc -p ."
   },
