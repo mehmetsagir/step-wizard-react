@@ -4,10 +4,22 @@ type Props = {
   values: { [key: string]: ReactNode };
   nextButtonRef: RefObject<HTMLButtonElement>;
   backButtonRef: RefObject<HTMLButtonElement>;
+  stepTitleRef?: RefObject<HTMLElement>;
 };
 
-const StepWizard = ({ values, nextButtonRef, backButtonRef }: Props) => {
+const StepWizard = ({
+  values,
+  nextButtonRef,
+  backButtonRef,
+  stepTitleRef,
+}: Props) => {
   const [currentStep, setCurrentStep] = useState(0);
+
+  useEffect(() => {
+    if (stepTitleRef?.current) {
+      stepTitleRef.current.innerText = Object.keys(values)[currentStep];
+    }
+  }, [stepTitleRef, currentStep, values]);
 
   useEffect(() => {
     if (nextButtonRef.current) {
