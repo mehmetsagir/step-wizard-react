@@ -28,7 +28,7 @@ const StepWizard = ({ values, nextButtonRef, backButtonRef }: Props) => {
   }, [nextButtonRef, backButtonRef, currentStep, values]);
 
   return Object.entries(values).map((values, index) => {
-    return index === currentStep && values[0];
+    return index === currentStep && values[1];
   });
 };
 
