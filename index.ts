@@ -5,6 +5,7 @@ type Props = {
   nextButtonRef: RefObject<HTMLButtonElement>;
   backButtonRef: RefObject<HTMLButtonElement>;
   stepTitleRef?: RefObject<HTMLElement>;
+  onChangeStep?: () => void;
 };
 
 const StepWizard = ({
@@ -12,6 +13,7 @@ const StepWizard = ({
   nextButtonRef,
   backButtonRef,
   stepTitleRef,
+  onChangeStep,
 }: Props) => {
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -37,6 +39,8 @@ const StepWizard = ({
         }
       };
     }
+
+    onChangeStep?.();
   }, [nextButtonRef, backButtonRef, currentStep, values]);
 
   return Object.entries(values).map((values, index) => {
