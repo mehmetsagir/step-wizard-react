@@ -5,7 +5,7 @@ type Props = {
   nextButtonRef: RefObject<HTMLButtonElement>;
   backButtonRef: RefObject<HTMLButtonElement>;
   stepTitleRef?: RefObject<HTMLElement>;
-  onChangeStep?: () => void;
+  onChangeStep?: (step?: string | number) => void;
 };
 
 const StepWizard = ({
@@ -21,6 +21,7 @@ const StepWizard = ({
     if (stepTitleRef?.current) {
       stepTitleRef.current.innerText = Object.keys(values)[currentStep];
     }
+    onChangeStep?.(Object.entries(values)[currentStep][0]);
   }, [stepTitleRef, currentStep, values]);
 
   useEffect(() => {
@@ -39,8 +40,6 @@ const StepWizard = ({
         }
       };
     }
-
-    onChangeStep?.();
   }, [nextButtonRef, backButtonRef, currentStep, values]);
 
   return Object.entries(values).map((values, index) => {
