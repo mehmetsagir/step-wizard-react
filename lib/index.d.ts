@@ -6,7 +6,7 @@ declare type Props = {
     nextButtonRef: RefObject<HTMLButtonElement>;
     backButtonRef: RefObject<HTMLButtonElement>;
     stepTitleRef?: RefObject<HTMLElement>;
-    onChangeStep?: () => void;
+    onChangeStep?: (step?: string | number) => void;
 };
 declare const StepWizard: ({ values, nextButtonRef, backButtonRef, stepTitleRef, onChangeStep, }: Props) => ReactNode[];
 export default StepWizard;
