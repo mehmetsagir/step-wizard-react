@@ -1,6 +1,7 @@
 export default {
   github: 'https://github.com/mehmetsagir/step-wizard-react',
-  docsRepositoryBase: 'https://github.com/mehmetsagir/step-wizard-react/',
+  docsRepositoryBase:
+    'https://github.com/mehmetsagir/step-wizard-react/tree/master/website/pages/',
   titleSuffix: ' – Step Wizard for React',
   logo: (
     <>
