@@ -1,5 +1,7 @@
 # Step Wizard for React
 
+[See here for more detailed explanation and examples.](https://step-wizard-react.vercel.app)
+
 <p>
   <a href="https://www.npmjs.com/package/step-wizard-react">
     <img src="https://img.shields.io/npm/dm/step-wizard-react" alt="Downloads">
@@ -44,7 +46,7 @@ Thus, it allows you to make all design changes or positioning as you wish. <br /
 
 Required fields expected from you:
 
-- <b>values</b>: The structure you want to split into steps. <a href="#">You can view the examples here.</a>
+- <b>values</b>: The structure you want to split into steps. <a href="https://step-wizard-react.vercel.app/">You can view the examples here.</a>
 - <b>nextButtonRef</b>: The reference of the button to click to proceed to the next step.
 - <b>backButtonRef</b>: The reference of the button to click to move to the previous step.
 
