@@ -1,3 +1,5 @@
+import Basic from '../Examples/Basic'
+
 # Get Started
 
 <div
@@ -62,6 +64,8 @@ Required fields expected from you:
 
 The simplest example use:
 
+<Basic />
+
 ```js
 import React, { useRef } from 'react'
 import Wizard from 'step-wizard-react'
@@ -69,6 +73,7 @@ import Wizard from 'step-wizard-react'
 const App = () => {
   const nextButtonRef = useRef()
   const backButtonRef = useRef()
+  const stepTitleRef = useRef()
 
   const values = {
     'Step 1': 'Hello!',
@@ -78,8 +83,10 @@ const App = () => {
 
   return (
     <React.StrictMode>
+      <h1 ref={stepTitleRef} />
       <Wizard
         values={values}
+        stepTitleRef={stepTitleRef}
         nextButtonRef={nextButtonRef}
         backButtonRef={backButtonRef}
       />

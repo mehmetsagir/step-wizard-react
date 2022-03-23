@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Wizard from '../package/index.js'
+import Wizard from '../package/'
 import { Box, Button, Text } from '@chakra-ui/react'
 
 function Basic() {
